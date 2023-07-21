@@ -83,7 +83,7 @@ function CreateHangout() {
       joining: [],
     };
     const response = await fetch(
-      "https://backend-high-paw.onrender.com",
+      "https://backend-high-paw.onrender.com/hangout/create",
       // "https://high-paw-production.up.railway.app/hangout/create",
       {
         method: "POST",
