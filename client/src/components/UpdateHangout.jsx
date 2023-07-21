@@ -57,7 +57,8 @@ function UpdateHangout() {
   useEffect(() => {
     const getHangout = async () => {
       const response = await fetch(
-        `https://high-paw-production.up.railway.app/hangout/${id}`,
+        // `https://high-paw-production.up.railway.app/hangout/${id}`,
+        `https://backend-high-paw.onrender.com/hangout/${id}`,
         {
           headers: {
             Authorization: `Bearer ${user.accessToken}`,
@@ -89,7 +90,8 @@ function UpdateHangout() {
       joining: hangout.joining,
     };
     const response = await fetch(
-      `https://high-paw-production.up.railway.app/hangout/${id}`,
+      // `https://high-paw-production.up.railway.app/hangout/${id}`,
+      `https://backend-high-paw.onrender.com/hangout/${id}`,
       {
         method: "PUT",
         headers: {

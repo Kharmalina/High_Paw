@@ -22,7 +22,8 @@ function Hangout() {
   // }, [user]);
   const getHangoutUser = async (userId) => {
     const response = await fetch(
-      `https://high-paw-production.up.railway.app/profile/${userId}`,
+      `https://backend-high-paw.onrender.com/profile/${userId}`,
+      // `https://high-paw-production.up.railway.app/profile/${userId}`,
       {
         headers: {
           Authorization: `Bearer ${user.accessToken}`,
@@ -35,7 +36,8 @@ function Hangout() {
   const getJoiners = async (joiners) => {
     for (let joiner of joiners) {
       const response = await fetch(
-        `https://high-paw-production.up.railway.app/profile/${joiner}`,
+        `https://backend-high-paw.onrender.com/profile/${joiner}`,
+        // `https://high-paw-production.up.railway.app/profile/${joiner}`,
         {
           headers: {
             Authorization: `Bearer ${user.accessToken}`,
@@ -52,7 +54,8 @@ function Hangout() {
   useEffect(() => {
     const getHangout = async () => {
       const response = await fetch(
-        `https://high-paw-production.up.railway.app/hangout/${id}`,
+        `https://backend-high-paw.onrender.com/hangout/${id}`,
+        // `https://high-paw-production.up.railway.app/hangout/${id}`,
         {
           headers: {
             Authorization: `Bearer ${user.accessToken}`,
@@ -75,7 +78,8 @@ function Hangout() {
 
   const deleteHangout = async (id) => {
     const response = await fetch(
-      `https://high-paw-production.up.railway.app/hangout/${id}`,
+      `https://backend-high-paw.onrender.com/hangout/${id}`,
+      // `https://high-paw-production.up.railway.app/hangout/${id}`,
       {
         method: "DELETE",
         headers: {
@@ -102,7 +106,8 @@ function Hangout() {
       joining: [...hangout.joining, user.user._id],
     };
     const response = await fetch(
-      `https://high-paw-production.up.railway.app/hangout/${id}`,
+      `https://backend-high-paw.onrender.com/hangout/${id}`,
+      // `https://high-paw-production.up.railway.app/hangout/${id}`,
       {
         method: "PUT",
         headers: {

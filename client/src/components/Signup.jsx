@@ -109,7 +109,8 @@ function Signup() {
     }
     console.log(latLong);
     axios
-      .post("https://high-paw-production.up.railway.app/auth/register", {
+      // .post("https://high-paw-production.up.railway.app/auth/register", {
+      .post(`https://backend-high-paw.onrender.com/auth/register`, {
         ...form,
         latLong,
       })

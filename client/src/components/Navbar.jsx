@@ -21,7 +21,8 @@ function Navbar() {
   const handleLogout = () => {
     //send refresh token to backend to blacklist it
 
-    fetch("https://high-paw-production.up.railway.app/auth/logout", {
+    // fetch("https://high-paw-production.up.railway.app/auth/logout", {
+    fetch(`https://backend-high-paw.onrender.com/auth/logout`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

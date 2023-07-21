@@ -28,7 +28,8 @@ function Profile() {
   useEffect(() => {
     const getProfile = async () => {
       const response = await fetch(
-        `https://high-paw-production.up.railway.app/profile/${id}`,
+        // `https://high-paw-production.up.railway.app/profile/${id}`,
+        `https://backend-high-paw.onrender.com/profile/${id}`,
         {
           headers: {
             Authorization: `Bearer ${user.accessToken}`,

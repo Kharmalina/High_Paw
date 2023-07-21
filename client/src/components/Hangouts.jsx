@@ -22,7 +22,8 @@ function Hangouts() {
   // get user name for a userId
   const getUserName = async (id) => {
     const response = await fetch(
-      `https://high-paw-production.up.railway.app/profile/${id}`,
+      `https://backend-high-paw.onrender.com/profile/${id}`,
+      // `https://high-paw-production.up.railway.app/profile/${id}`,
       {
         headers: {
           Authorization: `Bearer ${user.accessToken}`,
@@ -39,7 +40,8 @@ function Hangouts() {
   useEffect(() => {
     const getHangouts = async () => {
       const response = await fetch(
-        `https://high-paw-production.up.railway.app/hangout/all`,
+        `https://backend-high-paw.onrender.com/hangout/all`,
+        // `https://high-paw-production.up.railway.app/hangout/all`,
         {
           headers: {
             Authorization: `Bearer ${user.accessToken}`,

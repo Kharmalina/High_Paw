@@ -36,7 +36,8 @@ function Home() {
   useEffect(() => {
     const getHangouts = async () => {
       const response = await fetch(
-        "https://high-paw-production.up.railway.app/hangout/all",
+        `https://backend-high-paw.onrender.com/hangout/all`,
+        // "https://high-paw-production.up.railway.app/hangout/all",
         {
           // allows you to be authorized to see the hangouts
           headers: {
